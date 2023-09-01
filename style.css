@@ -1,0 +1,852 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    & .fixed{
+        height: 30px;
+        width: 100%;
+        background-color: #000000;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        position: absolute;
+        top: 0%;
+        z-index: 0;
+        & .f{
+            width:  500px;
+            display: inline-flex;
+            list-style: none;
+            & li{
+                margin-inline: 12px;
+                & i{
+                    margin-right: 5px;
+                }
+            }
+        }
+        & .contacts{
+            font-size: 16px;
+            padding-left: 50px;
+        }
+        & .links{
+            font-size: 22px;
+            padding-left: 310px;
+        }
+        & .links i:hover{
+            cursor: pointer;
+        }
+    }
+    + .navbar{
+        height: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        z-index: 2;
+        top: 0%;
+        background-color: #ffffff;
+        justify-content: space-around;
+        & .logo{
+            cursor: pointer;
+            + .menu{
+                & ul{
+                    display: inline-flex;
+                    list-style: none;
+                    margin-left: 200px;
+                    & li{
+                        margin-inline: 15px;
+                        font-size: 15px;
+                        font-weight: bold;
+                        & i{
+                            font-size: 20px;
+                        }
+                    }
+                    & li:hover{
+                        color: #19a3ff;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        + .heropage{
+            height: 150vh;
+            background-image: url(images/home_page_header-2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            filter: drop-shadow(5);
+            color: white;
+            margin-top: 50px;
+            scroll-behavior: smooth;
+            overflow: hidden;
+            & h1{
+                padding-top: 160px;
+                font-size: 55px;
+                padding-bottom: 20px;
+                + p{
+                    font-size: 22px;
+                    padding-bottom: 40px;
+                    ~ button{
+                        border: none;
+                        font-size: 16px;
+                        font-weight: bold;
+                        padding: 15px 30px;
+                        border-radius: 120px;
+                        margin: 0px 15px;
+                        cursor: pointer;
+                        color: white;
+                        + svg{
+                            height: 300px;
+                        }
+                    }
+                    + .b1{
+                        background-color: #158ddd;
+                        + .b2{
+                            background-color: transparent;
+                            border: 2px solid #ffffff;
+                        }
+                    }
+                }
+            }
+            + .cards{
+                height: auto;
+                display: flex;
+                justify-content: space-evenly;
+                transform: translate(0px, -80px);
+                padding-bottom: 20px;
+                & .card{
+                    padding: 0px 35px;
+                    & h1{
+                        font-size: 60px;
+                        color: #ffffff;
+                        & i{
+                            border-radius: 100%;
+                            background-color: #19a3ff;
+                            padding: 30px 30px;
+                            transform: translate(0px , -30px );
+                            box-shadow: 4px 5px 8px black;
+                        }
+                        + h2{
+                            font-size: 23px;
+                            padding-bottom: 20px;
+                            + p{
+                                font-size: 17px;
+                                line-height: 24px;
+                                color: rgb(173, 173, 173);
+                            }
+                        }
+                    }
+                }
+                + .prices{
+                    height: auto;
+                    overflow: hidden;
+                    & h1{
+                        font-size: 40px;
+                        padding: 20px 0px;
+                        + p{
+                            color: rgb(109, 109, 109);
+                            font-size: 20px;
+                            + .price{
+                                height: 800px;
+                                display: flex;
+                                justify-content: space-evenly;
+                                align-items: center;
+                                & .p{
+                                    & h2{
+                                        font-size: 22px;
+                                        font-weight: bold;
+                                        text-align: start;
+                                        padding-left: 30px;
+                                        padding-bottom: 20px;
+                                        + p{
+                                            text-align: start;
+                                            font-size: 17px;
+                                            padding-left: 30px;
+                                            line-height: 24px;
+                                            color: rgb(128, 128, 128);
+                                            & span{
+                                                font-weight: bold;
+                                            }
+                                            + span{
+                                                text-align: start;
+                                                font-size: 18px;
+                                                margin-left: -160px;
+                                                color: #158ddd;
+                                            }
+                                            + span:hover{
+                                                text-decoration: underline;
+                                                cursor: pointer;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    + .ecommerce{
+                        height: 950px;
+                        & h1{
+                            font-size: 40px;
+                            padding: 20px 0px;
+                            + p{
+                                font-size: 20px;
+                                color: rgb(109, 109, 109);
+                                + .pricing{
+                                    height: 800px;
+                                    display: flex;
+                                    justify-content: space-evenly;
+                                    align-items: center;
+                                    padding-top: 20px;
+                                    & .ecom{
+                                        height: 725px;
+                                        width: 380px;
+                                        border: 1px solid #a5a5a5;
+                                        overflow: hidden;
+                                        padding-left: 30px;
+                                        text-align: start;
+                                        & img{
+                                            + h2{
+                                                font-size: 22px;
+                                                font-weight: bold;
+                                                text-align: start;
+                                                padding-bottom: 20px;
+                                                + p{
+                                                    text-align: start;
+                                                    font-size: 17px;
+                                                    line-height: 24px;
+                                                    color: rgb(128, 128, 128);
+                                                    & span{
+                                                        font-weight: bold;
+                                                    }
+                                                    + span{
+                                                        font-size: 18px;
+                                                        color: #158ddd;
+                                                        padding-bottom: 20px;
+                                                    }
+                                                    + span:hover{
+                                                        text-decoration: underline;
+                                                        cursor: pointer;
+                                                    }
+                                                }
+                                                + p::after{
+                                                    content: "_________________________________________________________________________________________";
+                                                    display: block;
+                                                    position: relative;
+                                                    left: -30px;
+                                                    padding-bottom: 30px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    & .ecom2{
+                                        height: 775px;
+                                    }
+                                    & .ecom3{
+                                        height: 750px;
+                                        & img{
+                                            transform: translate(-30px , 0px);
+                                        }
+                                    }
+                                    & .ecom:hover{
+                                        transform: translate(0px , -2px);
+                                        box-shadow: 0px 0px 10px #b8b8b8;
+                                    }
+                                }
+                            }
+                        }
+                        + .portfolio{
+                            height: 1400px;
+                            background-color: #f1faff;
+                            & h1{
+                                font-size: 40px;
+                                padding-top: 50px;
+                                + p{
+                                    padding: 20px 0px 30px 0px;
+                                    font-size: 20px;
+                                    color: rgb(128, 128, 128);
+                                    + .ports{
+                                        height: 1100px;
+                                        display: grid;
+                                        grid-template-columns: 32% 32% 32%;
+                                        grid-template-rows: 500px 500px;
+                                        grid-row-gap: 40px;
+                                        justify-content: space-evenly;
+                                        padding-top: 20px;
+                                        & .port{
+                                            overflow: hidden;
+                                            border: 1px solid rgb(128, 128, 128);
+                                            & img{
+                                                + h3{
+                                                    padding: 30px 0px 15px 0px; 
+                                                    font-size: 17px;
+                                                    font-weight: bold;
+                                                    font-family: monospace;
+                                                    + p{
+                                                        font-size: 14px;
+                                                        font-family: cursive;
+                                                        text-align: center;
+                                                        line-height: 17px;
+                                                        color: #808080;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        + button{
+                                            margin-top: 10px;
+                                            border: none;
+                                            padding: 15px 30px;
+                                            color: white;
+                                            font-size: 17px;
+                                            border-radius: 10px;
+                                            cursor: pointer;
+                                            background-color: #fd9824;
+                                        }
+                                    }
+                                }
+                            }
+                            + .realclients{
+                                height: 140vh;
+                                background-color: #f1faff;
+                                & h1{
+                                    font-size: 40px;
+                                    padding-top: 50px;
+                                    + p{
+                                        padding-top: 20px;
+                                        font-size: 18px;
+                                        color: #808080;
+                                        + .clients{
+                                            height: 700px;
+                                            display: grid;
+                                            grid-template-columns: 32% 32% 32%;
+                                            grid-template-rows: 340px 340px;
+                                            grid-column-gap: 2%;
+                                            justify-content: space-evenly;
+                                            padding-left: 10px;
+                                            & .client{
+                                                padding-top: 50px;
+                                                width: 95%;
+                                                & h3{
+                                                    font-size: 30px;
+                                                    color: #19a3ff;
+                                                    padding-bottom: 10px;
+                                                    + p{
+                                                        font-size: 17px;
+                                                        color: #808080;
+                                                        padding-bottom: 20px;
+                                                        + img{
+                                                            padding-bottom: 10px;
+                                                            + h2{
+                                                                font-size: 16px;
+                                                                font-weight: bold;
+                                                                font-family: monospace;
+                                                                padding-bottom: 20px;
+                                                                + p{
+                                                                    color: #808080;
+                                                                    font-family: cursive;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            + button{
+                                                border: none;
+                                                padding: 15px 30px;
+                                                font-size: 15px;
+                                                font-family: monospace;
+                                                color: #ffffff;
+                                                background-color: #19a3ff;
+                                                border-radius: 10px;
+                                                cursor: pointer;
+                                            }
+                                        }
+                                    }
+                                }
+                                + .plans{
+                                    height: 800px;
+                                    & h1{
+                                        padding-top: 100px;
+                                        font-size: 45px;
+                                        + p{
+                                            padding-top: 20px;
+                                            font-size: 20px;
+                                            color: #808080;
+                                            + .plan{
+                                                height: 500px;
+                                                margin-top: 20px;
+                                                display: flex;
+                                                justify-content: space-evenly;
+                                                align-items: center;
+                                                & .p{
+                                                    width: 400px;
+                                                    text-align: left;
+                                                    & h3{
+                                                        font-size: 30px;
+                                                        text-align: left;
+                                                        padding-bottom: 20px;
+                                                        & i{
+                                                            color: #19a3ff;
+                                                            border-radius: 100%;
+                                                            padding: 25px 30px;
+                                                            border: 3px solid #19a3ff;
+                                                        }
+                                                        + h2{
+                                                            text-align: left;
+                                                            font-size: 20px;
+                                                            font-family: monospace;
+                                                            padding-bottom: 20px;
+                                                            + p{
+                                                                text-align: left;
+                                                                font-size: 18px;
+                                                                line-height: 24px;
+                                                                color: #78aabe;
+                                                                padding-bottom: 40px;
+                                                                + button{
+                                                                    border: none;
+                                                                    font-size: 13px;
+                                                                    font-family: monospace;
+                                                                    padding: 12px 30px;
+                                                                    background-color: #fd9824;
+                                                                    cursor: pointer;
+                                                                    border-radius: 10px;
+                                                                    color: #ffffff;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    + .register{
+                                        padding-bottom: 50px;
+                                        & h1{
+                                            font-size: 40px;
+                                            padding-top: 70px;
+                                            + p{
+                                                padding-top: 20px;
+                                                font-size: 20px;
+                                                + p{
+                                                    padding-top: 40px;
+                                                    font-size: 23px;
+                                                    color: #808080;
+                                                    + .reg{
+                                                        margin-top: 50px;
+                                                        display: flex;
+                                                        justify-content: space-evenly;
+                                                        & .r{
+                                                            width: 42%;
+                                                            height: 430px;
+                                                            display: flex;
+                                                            justify-content: space-evenly;
+                                                            border: 1px solid #a8a8a8;
+                                                            padding: 30px 10px;
+                                                            & .img{
+                                                                font-size: 50px;
+                                                                color: #fd9824;
+                                                                + .txt{
+                                                                    width: 80%;
+                                                                    & h2{
+                                                                        color: #fd9824;
+                                                                        font-family: monospace;
+                                                                        text-align: start;
+                                                                        font-size: 18px;
+                                                                        padding-bottom: 20px;
+                                                                        text-decoration: underline;
+                                                                        + p{
+                                                                            text-align: start;
+                                                                            font-size: 19px;
+                                                                            line-height: 28px;
+                                                                            color: #808080;
+                                                                            & button{
+                                                                                margin-bottom: 30px;
+                                                                                border: none;
+                                                                                border-radius: 10px;
+                                                                                background-color: #19a3ff;
+                                                                                color: #ffffff;
+                                                                                padding: 12px 30px;
+                                                                                cursor: pointer;
+                                                                                font-size: 17px;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                        & .r2{
+                                                            height: 410px;
+                                                            width: 45%;
+                                                            & button{
+                                                                margin-top: 20px;
+                                                            }
+                                                        }
+                                                        & .r:hover{
+                                                            box-shadow: 2px 2px 7px #b9b9b9;
+                                                            transform: translate(2px , -2px);
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        + .design{
+                                            height: 900px;
+                                            padding-top: 100px;
+                                            & h4{
+                                                font-family: monospace;
+                                                padding-bottom: 20px;
+                                                font-size: 18px;
+                                                + h1{
+                                                    font-size: 40px;
+                                                    color: #808080;
+                                                    padding-bottom: 30px;
+                                                    & span{
+                                                        font-weight: bold;
+                                                        font-family: cursive;
+                                                    }
+                                                    + p{
+                                                        font-size: 22px;
+                                                        padding-bottom: 20px;
+                                                        + p{
+                                                            font-size: 19px;
+                                                            color: #808080;
+                                                            padding-bottom: 10px;
+                                                            + .image{
+                                                                display: flex;
+                                                                align-items: baseline;
+                                                                & .i1{
+                                                                    transform: translate(50px , 0px);
+                                                                    box-shadow: 0px 0px 10px #555555;
+                                                                    + .i2{
+                                                                        transform: translate(-100px, 0px);
+                                                                        box-shadow: 0px 0px 10px rgb(85, 85, 85);
+                                                                        + .i3{
+                                                                            transform: translate(-240px , 0px);
+                                                                            z-index: -1;
+                                                                            box-shadow: 0px 0px 10px rgb(85, 85, 85);
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            + .sheet{
+                                                height: 750px;
+                                                padding-top: 70px;
+                                                & h1{
+                                                    font-size: 40px;
+                                                    padding-bottom: 20px;
+                                                    + .cards{
+                                                        display: grid;
+                                                        grid-template-columns: 45% 42%;
+                                                        grid-template-rows: 250px 250px;
+                                                        grid-column-gap: 30px;
+                                                        grid-row-gap: 20px;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        & .card{
+                                                            display: flex;
+                                                            justify-content: space-evenly;
+                                                            height: 250px;
+                                                            & .logo{
+                                                                color: #fd9824;
+                                                                font-size: 30px;
+                                                                padding: 20px 20px;
+                                                                & i{
+                                                                    padding: 20px 20px;
+                                                                    border-radius: 100%;
+                                                                    border: 3px solid #fd9824;
+                                                                }
+                                                                + .text{
+                                                                    & h4{
+                                                                        font-size: 19px;
+                                                                        font-family: monospace;
+                                                                        font-weight: bold;
+                                                                        color: #fd9824;
+                                                                        text-align: start;
+                                                                        padding: 20px 0px;
+                                                                        + p{
+                                                                            text-align: start;
+                                                                            font-size: 17px;
+                                                                            line-height: 24px;
+                                                                            color: #808080;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                            & .logo2 , .logo4{
+                                                                & i{
+                                                                    padding: 20px 25px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                + .started{
+                                                    background-color: #19a3ff;
+                                                    height: 180px;
+                                                    display: flex;
+                                                    justify-content: space-around;
+                                                    align-items: center;
+                                                    & h1{
+                                                        font-size: 40px;
+                                                        color: white;
+                                                        font-weight: lighter;
+                                                        text-align: start;
+                                                        & span{
+                                                            font-weight: bold;
+                                                        }
+                                                        + button{
+                                                            border: none;
+                                                            background-color: #fd9824;
+                                                            color: #ffffff;
+                                                            font-size: 14px;
+                                                            cursor: pointer;
+                                                            border-radius: 10px;
+                                                            font-family: monospace;
+                                                            padding: 12px 30px;
+                                                        }
+                                                    }
+                                                    + .blogs{
+                                                        height: 900px;
+                                                        padding-top: 80px;
+                                                        & h1{
+                                                            font-size: 35px;
+                                                            + .blog{
+                                                                height: 680px;
+                                                                display: flex;
+                                                                justify-content: space-evenly;
+                                                                align-items: center;
+                                                                & .b{
+                                                                    width: 400px;
+                                                                    height: 600px;
+                                                                    margin-inline: -40px;
+                                                                    text-align: start;
+                                                                    border: 1px solid #bbbbbb;
+                                                                    overflow: hidden;
+                                                                    & img{
+                                                                        + h3{
+                                                                            padding: 30px 20px 30px 40px;
+                                                                            font-size: 25px;
+                                                                            text-align: start;
+                                                                            + p{
+                                                                                text-align: start;
+                                                                                color: #808080;
+                                                                                font-size: 17px;
+                                                                                line-height: 22px;
+                                                                                padding: 0px 40px 30px 40px;
+                                                                                + p{
+                                                                                    text-align: start;
+                                                                                    padding: 0px 40px 30px 40px;
+                                                                                    cursor: pointer;
+                                                                                    color: #19a3ff;
+                                                                                }
+                                                                                + p:hover{
+                                                                                    text-decoration: underline;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                & .b:hover{
+                                                                    box-shadow: 0px 0px 10px #a5a5a5;
+                                                                    transform: translate(0px , -2px);
+                                                                }
+                                                                + button{
+                                                                    padding: 12px 30px;
+                                                                    font-family: monospace;
+                                                                    font-size: 14px;
+                                                                    background-color: #19a3ff;
+                                                                    color: #ffffff;
+                                                                    border: none;
+                                                                    cursor: pointer;
+                                                                    border-radius: 10px;
+                                                                }
+                                                            }
+                                                        }
+                                                        + .webdesign{
+                                                            height: 480px;
+                                                            padding-top: 40px;
+                                                            & h1{
+                                                                font-size: 40px;
+                                                                padding-bottom: 25px;
+                                                                + p{
+                                                                    border: 1px solid #b8b8b8;
+                                                                    width: 90%;
+                                                                    text-align: center;
+                                                                    padding: 20px 45px;
+                                                                    line-height: 25px;
+                                                                    font-size: 18px;
+                                                                    color: #808080;
+                                                                    margin: 0px 80px;
+                                                                }
+                                                                + p:hover{
+                                                                    box-shadow: 1px 0px 10px #a5a5a5;
+                                                                    transform: translate(0px , -2px);
+                                                                }
+                                                            }
+                                                            + .contact{
+                                                                height: 200vh;
+                                                                background-position: left;
+                                                                background-repeat: no-repeat;
+                                                                background-image: url(images/contactu-us-page-background.jpg);
+                                                                background-size: cover;
+                                                                color: #ffffff;
+                                                                & .bgcolor{
+                                                                    height: 100%;
+                                                                    background-color: rgba(0, 0, 0, 0.4);
+                                                                    & h2{
+                                                                        padding: 100px 0px 20px 0px;
+                                                                        font-size: 40px;
+                                                                        ~ .p{
+                                                                            font-size: 20px;
+                                                                            font-weight: lighter;
+                                                                            + form{
+                                                                                background-color: #ffffff;
+                                                                                color: #000000;
+                                                                                height: 900px;
+                                                                                width: 800px;
+                                                                                margin: 40px 300px;
+                                                                                padding: 60px 0px 0px 70px;
+                                                                                text-align: left;
+                                                                                & .label{
+                                                                                    color: #555555;
+                                                                                    font-size: 17px;
+                                                                                    font-weight: bold;
+                                                                                    line-height: 30px;
+                                                                                }
+                                                                                & select{
+                                                                                    text-align: start;
+                                                                                }
+                                                                                & .label1::after{
+                                                                                    content: "*";
+                                                                                    color: #ff0000;
+                                                                                }
+                                                                                & .t{
+                                                                                    height: 40px;
+                                                                                    width: 420px;
+                                                                                    outline: none;
+                                                                                    text-align: start;
+                                                                                    padding-left: 10px;
+                                                                                    font-size: 17px;
+                                                                                    border: 1px solid #a5a5a5;
+                                                                                }
+                                                                                & .t3 , .t4{
+                                                                                    & option{
+                                                                                        text-align: start;
+                                                                                    }
+                                                                                }
+                                                                                & .t6{
+                                                                                    height: 180px;
+                                                                                    width: 680px;
+                                                                                }
+                                                                                & .t:focus{
+                                                                                    outline: 1px solid #158ddd;
+                                                                                }
+                                                                                & div{
+                                                                                    background-color: #f3f3f3;
+                                                                                    width: 230px;
+                                                                                    height: 70px;
+                                                                                    border: 1px solid #b9b9b9;
+                                                                                    & input{
+                                                                                        font-size: 20px;
+                                                                                    }
+                                                                                }
+                                                                                & .t7{
+                                                                                    border: 1px solid #b9b9b9;
+                                                                                    padding: 10px 15px;
+                                                                                    font-size: 17px;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                + .footer{
+                                                                    background-color: #1d1d1d;
+                                                                    color: #ffffff;
+                                                                    height: 400px;
+                                                                    display: flex;
+                                                                    justify-content: space-evenly;
+                                                                    & .f{
+                                                                        width: 220px;
+                                                                        border-left: 1px solid #555555;
+                                                                        padding-left: 30px;
+                                                                        padding-top: 50px;
+                                                                        & h3{
+                                                                            font-size: 21px;
+                                                                            text-align: start;
+                                                                            padding-bottom: 20px;
+                                                                            ~ p{
+                                                                                line-height: 32px;
+                                                                                text-align: start;
+                                                                                color: #808080;
+                                                                            }
+                                                                            ~ h4{
+                                                                                color: #808080;
+                                                                                text-align: start;
+                                                                                font-weight: bold;
+                                                                                padding-bottom: 20px;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                    & .f3{
+                                                                        & p{
+                                                                            line-height: 32px;
+                                                                            text-align: start;
+                                                                            color: #808080;
+                                                                        }
+                                                                    }
+                                                                    & .f4{
+                                                                        width: 450px;
+                                                                        border: none;
+                                                                        & h1{
+                                                                            font-size: 40px;
+                                                                            font-weight: bold;
+                                                                            padding-bottom: 20px;
+                                                                            + p{
+                                                                                font-size: 18px;
+                                                                                padding-bottom: 20px;
+                                                                                + span{
+                                                                                    & i{
+                                                                                        font-size: 25px;
+                                                                                        margin-inline: 5px;
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                    & .f1 , .f2 , .f3{
+                                                                        & p:hover{
+                                                                            text-decoration: underline;
+                                                                            cursor: pointer;
+                                                                        }
+                                                                    }
+                                                                    & .f4{
+                                                                        & i:hover{
+                                                                            cursor: pointer;
+                                                                            color: #555555;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
