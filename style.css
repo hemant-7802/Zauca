@@ -6,6 +6,7 @@
     font-family: sans-serif;
     text-align: center;
     font-weight: lighter;
+    scroll-behavior: smooth;
     & .fixed{
         height: 30px;
         width: 100%;
@@ -47,7 +48,7 @@
         display: flex;
         align-items: center;
         position: fixed;
-        z-index: 2;
+        z-index: 3;
         top: 0%;
         background-color: #ffffff;
         justify-content: space-around;
@@ -84,6 +85,7 @@
             margin-top: 50px;
             scroll-behavior: smooth;
             overflow: hidden;
+            background-color: #ffffff;
             & h1{
                 padding-top: 160px;
                 font-size: 55px;
@@ -114,13 +116,14 @@
                 }
             }
             + .cards{
-                height: auto;
+                height: 500px;
                 display: flex;
                 justify-content: space-evenly;
-                transform: translate(0px, -80px);
                 padding-bottom: 20px;
+                background-color: #ffffff;
                 & .card{
                     padding: 0px 35px;
+                    transform: translate(0px, -50px);
                     & h1{
                         font-size: 60px;
                         color: #ffffff;
@@ -144,6 +147,7 @@
                 }
                 + .prices{
                     height: auto;
+                    background-color: #ffffff;
                     overflow: hidden;
                     & h1{
                         font-size: 40px;
@@ -190,6 +194,7 @@
                     }
                     + .ecommerce{
                         height: 950px;
+                        background-color: #ffffff;
                         & h1{
                             font-size: 40px;
                             padding: 20px 0px;
@@ -369,6 +374,7 @@
                                 }
                                 + .plans{
                                     height: 800px;
+                                    background-color: #ffffff;
                                     & h1{
                                         padding-top: 100px;
                                         font-size: 45px;
@@ -425,6 +431,7 @@
                                     }
                                     + .register{
                                         padding-bottom: 50px;
+                                        background-color: #ffffff;
                                         & h1{
                                             font-size: 40px;
                                             padding-top: 70px;
@@ -496,6 +503,7 @@
                                         + .design{
                                             height: 900px;
                                             padding-top: 100px;
+                                            background-color: #ffffff;
                                             & h4{
                                                 font-family: monospace;
                                                 padding-bottom: 20px;
@@ -524,9 +532,10 @@
                                                                     + .i2{
                                                                         transform: translate(-100px, 0px);
                                                                         box-shadow: 0px 0px 10px rgb(85, 85, 85);
+                                                                        z-index: 2;
                                                                         + .i3{
                                                                             transform: translate(-240px , 0px);
-                                                                            z-index: -1;
+                                                                            z-index: 1;
                                                                             box-shadow: 0px 0px 10px rgb(85, 85, 85);
                                                                         }
                                                                     }
@@ -539,6 +548,7 @@
                                             + .sheet{
                                                 height: 750px;
                                                 padding-top: 70px;
+                                                background-color: #ffffff;
                                                 & h1{
                                                     font-size: 40px;
                                                     padding-bottom: 20px;
@@ -616,6 +626,7 @@
                                                     + .blogs{
                                                         height: 900px;
                                                         padding-top: 80px;
+                                                        background-color: #ffffff;
                                                         & h1{
                                                             font-size: 35px;
                                                             + .blog{
@@ -673,6 +684,7 @@
                                                         + .webdesign{
                                                             height: 480px;
                                                             padding-top: 40px;
+                                                            background-color: #ffffff;
                                                             & h1{
                                                                 font-size: 40px;
                                                                 padding-bottom: 25px;
@@ -693,6 +705,7 @@
                                                             }
                                                             + .contact{
                                                                 height: 200vh;
+                                                                position: static;
                                                                 background-position: left;
                                                                 background-repeat: no-repeat;
                                                                 background-image: url(images/contactu-us-page-background.jpg);
@@ -769,8 +782,12 @@
                                                                 }
                                                                 + .footer{
                                                                     background-color: #1d1d1d;
+                                                                    position:sticky ;
+                                                                    z-index: -1;
+                                                                    bottom: 0;
                                                                     color: #ffffff;
                                                                     height: 400px;
+                                                                    width: 100%;
                                                                     display: flex;
                                                                     justify-content: space-evenly;
                                                                     & .f{
